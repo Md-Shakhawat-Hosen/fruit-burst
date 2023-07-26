@@ -74,70 +74,98 @@
     <!-- Header section start from here -->
     <header class="max-w-screen-xl mx-auto px-10 mt-12">
       <!-- Navbar section start from here -->
-      <nav>
-        <div class="navbar bg-[#F85559] rounded-full px-12">
-          <div class="navbar-start hidden lg:flex">
-            <ul class="menu menu-horizontal px-1 text-white text-xs">
-              <li><a>Home</a></li>
-              <li><a>About Us</a></li>
-              <li><a>Shop</a></li>
-              <li><a>All Fruits</a></li>
-            </ul>
+      <div
+      class="py-3 lg:px-7 dark:bg-gray-800 dark:text-gray-100 lg:bg-[#f85559] rounded-full"
+    >
+      <div class="container flex justify-between h-16 mx-auto">
+        <ul class="hidden space-x-3 lg:flex">
+          <li class="flex">
+            <a
+              rel="noopener noreferrer"
+              href="#"
+              class="flex items-center px-4 -mb-1 text-white dark:border-transparent dark:text-violet-400 dark:border-violet-400"
+              >Home</a
+            >
+          </li>
+          <li class="flex">
+            <a
+              rel="noopener noreferrer"
+              href="#"
+              class="flex items-center px-4 -mb-1 text-white dark:border-transparent"
+              >About Us</a
+            >
+          </li>
+          <li class="flex">
+            <a
+              rel="noopener noreferrer"
+              href="#"
+              class="flex items-center px-4 -mb-1 text-white dark:border-transparent"
+              >Shop</a
+            >
+          </li>
+          <li class="flex">
+            <a
+              rel="noopener noreferrer"
+              href="#"
+              class="flex items-center px-4 -mb-1 text-white dark:border-transparent"
+              >All Fruits</a
+            >
+          </li>
+        </ul>
+        <a
+          rel="noopener noreferrer"
+          href="#"
+          aria-label="Back to homepage"
+          class="flex items-center p-2"
+        >
+          <div class="flex items-center gap-1">
+            <img class="w-7 lg:w-14" src="./images/logo.png" alt="" />
+            <p class="font-bold lg:text-white lg:text-4xl">Fruits Burst</p>
           </div>
-          <div class="navbar-center">
-            <div class="dropdown">
-              <label tabindex="0" class="btn btn-ghost lg:hidden">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M4 6h16M4 12h8m-8 6h16"
-                  />
-                </svg>
-              </label>
-              <ul
-                tabindex="0"
-                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+        </a>
+        <div class="flex items-center md:space-x-4">
+          <div class="relative">
+            <span class="absolute inset-y-0 right-3 flex items-center pl-2">
+              <button
+                type="submit"
+                title="Search"
+                class="p-1 focus:outline-none focus:ring"
               >
-                <li><a>Home</a></li>
-                <li><a>About Us</a></li>
-                <li><a>Shop</a></li>
-                <li><a>All Fruits</a></li>
-              </ul>
-            </div>
-            <div class="flex items-center gap-1">
-              <img class="w-14" src="./images/logo.png" alt="" />
-              <p class="text-2xl lg:text-4xl text-white font-bold">
-                Fruit Burst
-              </p>
-            </div>
-          </div>
-
-          <div class="navbar-end relative">
+                <i class="fa-solid fa-magnifying-glass hidden md:block lg:block"></i>
+              </button>
+            </span>
             <input
-              class="px-3 py-3 w-4/5 rounded-full"
               type="search"
-              name=""
+              name="Search"
               placeholder="Search here"
-              id=""
+              class="hidden md:block lg:block px-40 py-3 pl-10 text-sm rounded-full sm:w-auto focus:outline-none dark:bg-gray-800 dark:text-gray-100 focus:dark:bg-gray-900"
             />
-            <i
-              class="fa-solid fa-magnifying-glass text-gray-400 absolute right-5"
-            ></i>
           </div>
+         
         </div>
-      </nav>
-      <!-- Navbar section start end here -->
+        <button title="Open menu" type="button" class="lg:p-4 md:hidden lg:hidden">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            class="w-6 h-6 dark:text-gray-100"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            ></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+       
+      <!-- Navbar section  end here -->
 
       <!-- Banner section start from here -->
-      <section class="mt-14">
+      <section class="lg:mt-14">
         <div class="carousel w-full relative">
           <div id="slide1" class="carousel-item relative w-full">
             <div class="hero w-full ">
@@ -145,14 +173,14 @@
               <!-- <div class="hero-overlay bg-opacity-60"></div> -->
               <div class="hero-content text-center text-white">
                 <div class="lg:w-4/5">
-                  <h1 class="lg:mb-5 text-xl lg:text-5xl font-bold">
+                  <h1 class="lg:mb-3 text-xl md:text-4xl lg:text-5xl font-bold">
                     Exotic tastes at your doorstep
                   </h1>
-                  <p class="lg:mb-5">
+                  <p class="px-3 md:p-6 md:text-2xl lg:mb-1">
                     We supply highly quality organic products
                   </p>
                   <button
-                    class="bg-[#f85559] p-2 lg:px-7 lg:py-5 rounded-lg lg:font-bold"
+                    class="bg-[#f85559] p-2 md:p-3 lg:px-7 lg:py-5 rounded-lg lg:font-bold"
                   >
                     Shop Now
                   </button>
