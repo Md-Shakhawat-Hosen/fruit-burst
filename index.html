@@ -53,31 +53,6 @@
          background-position: center;
          
       }
-.main-text
-{
-    position: absolute;
-    top: 50px;
-    width: 96.66666666666666%;
-    color: #FFF;
-}
-.btn-min-block
-{
-    min-width: 170px;
-    line-height: 26px;
-}
-.btn-clear
-{
-    color: #FFF;
-    background-color: transparent;
-    border-color: #FFF;
-    margin-right: 15px;
-}
-.btn-clear:hover
-{
-    color: #000;
-    background-color: #FFF;
-}
-
      
     </style>
   </head>
@@ -194,14 +169,22 @@
 
         </div>
 
-        <div class="absolute top-64 left-[300px]  hidden lg:block space-y-3">
+        <div class="absolute top-64 left-[300px]  hidden md:hidden lg:block space-y-3">
               <div class=" text-white mx-auto text-center w-4/5">
                 <h1 class="text-7xl font-bold text-center">Exotic tastes at your doorstep</h1>
                 <p class="text-center mt-6 mb-8">We supply highly quality organic products</p>
                 <button class="bg-[#f85559] p-4 rounded-lg">Shop Now</button>
               </div>
            </div>
-        <div class="absolute top-52 left-[100px]  block lg:hidden space-y-3">
+        <div class="absolute top-[220px] left-[200px]  hidden md:block lg:hidden space-y-2">
+              <div class=" text-white mx-auto text-center w-4/5">
+                <h1 class="text-3xl font-bold text-center">Exotic tastes at your doorstep</h1>
+                <p class="text-center mt-2 mb-3">We supply highly quality organic products</p>
+                <button class="bg-[#f85559] p-3 rounded-lg">Shop Now</button>
+              </div>
+           </div>
+
+        <div class="absolute top-52 left-[100px]  block md:hidden lg:hidden space-y-3">
               <div class=" text-white mx-auto text-center w-4/5">
                 <h1 class="text-xs font-bold text-center">Exotic tastes at your doorstep</h1>
                 <p class="text-center text-xs">We supply highly quality organic products</p>
@@ -246,7 +229,7 @@
       <section class="max-w-screen-xl mx-auto px-10 mt-14 lg:mt-48">
         <div class="flex flex-col lg:flex-row items-center justify-between">
           <div class="w-full text-center lg:text-left lg:w-2/4 space-y-3">
-            <h1 class="text-4xl">Deal of the day</h1>
+            <h1 class="text-4xl font-bold">Deal of the day</h1>
             <p>
               Contrary to popular belief, is not simply random text. It has
               roots in a piece of classical Latin literature from 45 BC, making
