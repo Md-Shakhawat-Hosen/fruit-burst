@@ -19,10 +19,16 @@
       href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
       rel="stylesheet"
     />
+ 
+
+
     <script
       src="https://kit.fontawesome.com/4ad39c9065.js"
       crossorigin="anonymous"
     ></script>
+
+
+    
      <script>
     tailwind.config = {
       theme: {
@@ -47,6 +53,30 @@
          background-position: center;
          
       }
+.main-text
+{
+    position: absolute;
+    top: 50px;
+    width: 96.66666666666666%;
+    color: #FFF;
+}
+.btn-min-block
+{
+    min-width: 170px;
+    line-height: 26px;
+}
+.btn-clear
+{
+    color: #FFF;
+    background-color: transparent;
+    border-color: #FFF;
+    margin-right: 15px;
+}
+.btn-clear:hover
+{
+    color: #000;
+    background-color: #FFF;
+}
 
      
     </style>
@@ -119,9 +149,11 @@
 
       <!-- Banner section start from here -->
       <section class="mt-14">
-        <div class="carousel w-full">
+
+        <div class="carousel w-full relative">
           <div id="slide1" class="carousel-item relative w-full">
-            <img src="./images/banner1.png" class="w-full" />
+                <img src="./images/banner1.png" class="w-full" />
+        
 
             <div
               class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
@@ -157,10 +189,28 @@
               <a href="#slide1" class="btn btn-circle">❯</a>
             </div>
           </div>
+
+          
+
         </div>
 
+        <div class="absolute top-64 left-[300px]  hidden lg:block space-y-3">
+              <div class=" text-white mx-auto text-center w-4/5">
+                <h1 class="text-7xl font-bold text-center">Exotic tastes at your doorstep</h1>
+                <p class="text-center mt-6 mb-8">We supply highly quality organic products</p>
+                <button class="bg-[#f85559] p-4 rounded-lg">Shop Now</button>
+              </div>
+           </div>
+        <div class="absolute top-52 left-[100px]  block lg:hidden space-y-3">
+              <div class=" text-white mx-auto text-center w-4/5">
+                <h1 class="text-xs font-bold text-center">Exotic tastes at your doorstep</h1>
+                <p class="text-center text-xs">We supply highly quality organic products</p>
+                <button class="bg-[#f85559] py-1 px-2 rounded-lg">Shop Now</button>
+              </div>
+           </div>
+
         <!-- Position relative section start from here -->
-                <div class="relative bottom-24 z-50 hidden lg:block">
+                <div class="absolute -bottom-16 hidden lg:block">
                     <div class=" w-4/5 bg-[#fff] mx-auto flex py-12 px-16 shadow-md rounded-lg gap-24">
                      <div>
                         <img src="./images/fruit1.png" alt="">
@@ -193,7 +243,7 @@
     <!-- main section start from here -->
     <main>
       <!-- Deal of the day section start from here -->
-      <section class="max-w-screen-xl mx-auto px-10 mt-14">
+      <section class="max-w-screen-xl mx-auto px-10 mt-14 lg:mt-48">
         <div class="flex flex-col lg:flex-row items-center justify-between">
           <div class="w-full text-center lg:text-left lg:w-2/4 space-y-3">
             <h1 class="text-4xl">Deal of the day</h1>
@@ -601,5 +651,7 @@
             </div>
          </footer>
     <!-- Footer section end here -->
+     
+    
   </body>
 </html>
